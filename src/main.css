@@ -16,4 +16,6 @@ body {
   margin: auto;
   border: 1px solid red;
   height: 100dvh;
+  text-align: center;
+  padding: 2rem;
 }

@@ -3,6 +3,8 @@ import { useGuess } from "../contexts/GuessContext";
 export default function GuessesLeft() {
   const { chances, randomNumber, guessedNumber } = useGuess();
 
+  if (guessedNumber === randomNumber) return null;
+
   if (chances === 0 && guessedNumber !== randomNumber)
     return <p>You are out of trials and have failed 😢</p>;
 
